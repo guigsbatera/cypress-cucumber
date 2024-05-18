@@ -4,7 +4,7 @@
 import Login from '../../support/pages/login'
 import Produtos from '../../support/pages/products'
 import Carrinho from '../../support/pages/cart'
-import Utilidades from '../../support/utilidades/indes'
+import Utilidades from '../../support/utilidades/index'
 //#endregion
 
 //#region Elementos

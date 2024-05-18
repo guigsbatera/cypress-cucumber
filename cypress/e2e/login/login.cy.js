@@ -2,7 +2,7 @@
 
 //#region Classes
 import Login from '../../support/pages/login'
-import Utilidades from '../../support/utilidades/indes'
+import Utilidades from '../../support/utilidades/index'
 //#endregion
 
 //#region Elementos
