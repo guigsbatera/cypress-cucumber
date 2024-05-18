@@ -4,11 +4,11 @@ const el = require('./elements').ELEMENTS;
 
 class Produtos {
 
-    filtrarCategoria(genero, category) {
+    filtrarCategoria(genero, categoria) {
         cy.get(el.txtCategory).should('exist').and('be.visible').and('have.text', 'Category')
-        if (genero === 'WOMEN' && category === 'DRESS' || 'TOPS' || 'SAREE') {
+        if (genero === 'WOMEN' && categoria === 'DRESS' || 'TOPS' || 'SAREE') {
             cy.get(el.btnWomen).should('exist').and('be.visible').click()
-            switch (category) {
+            switch (categoria) {
                 case 'DRESS':
                     cy.get(el.btnFiltroWomenDress).should('exist').and('be.visible').click()
                     cy.get(el.txtProdutosRetornados).should('exist').and('be.visible').and('have.text', 'Women - Dress Products')
@@ -28,9 +28,9 @@ class Produtos {
                     break;
             }
         }
-        if (genero === 'MEN' && category === 'TSHIRTS' || 'JEANS') {
+        if (genero === 'MEN' && categoria === 'TSHIRTS' || 'JEANS') {
             cy.get(el.btnMen).should('exist').and('be.visible').click()
-            switch (category) {
+            switch (categoria) {
                 case 'TSHIRTS':
                     cy.get(el.btnFiltroMenTshirts).should('exist').and('be.visible').click()
                     cy.get(el.txtProdutosRetornados).should('exist').and('be.visible').and('have.text', 'Men - Tshirts Products')
@@ -45,9 +45,9 @@ class Produtos {
                     break;
             }
         }
-        if (genero === 'KIDS' && category === 'DRESS' || 'TOPS & SHIRTS' ) {
+        if (genero === 'KIDS' && categoria === 'DRESS' || 'TOPS & SHIRTS' ) {
             cy.get(el.btnKids).should('exist').and('be.visible').click()
-            switch (category) {
+            switch (categoria) {
                 case 'DRESS':
                     cy.get(el.btnFiltroKidsDress).should('exist').and('be.visible').click()
                     cy.get(el.txtProdutosRetornados).should('exist').and('be.visible').and('have.text', 'Kids - Dress Products')
