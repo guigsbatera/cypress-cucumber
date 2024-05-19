@@ -9,5 +9,6 @@ export const ELEMENTS = {
     txtPrice: 'td[class="cart_price"] > p',
     btnQuantity: 'button[class="disabled"]',
     txtTotal: 'p[class="cart_total_price"]',
-    btnXDelete: 'a[class="cart_quantity_delete"]'
+    btnXDelete: 'a[class="cart_quantity_delete"]',
+    btnProceedToCheckout: 'a[class="btn btn-default check_out"]'
 }
