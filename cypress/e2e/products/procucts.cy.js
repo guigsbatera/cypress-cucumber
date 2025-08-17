@@ -10,7 +10,7 @@ import Utilidades from '../../support/utilidades/index'
 const el = require('../../support/pages/products/elements').ELEMENTS
 //#endregion
 
-describe('Filtrar produtos pela categoria', () => {
+describe('Filtrar produtos pela sua categoria', () => {
 
     beforeEach(() => {
         cy.visit(Utilidades.urlAutomationExerciseLogin)
