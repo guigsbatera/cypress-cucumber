@@ -48,3 +48,17 @@ Este modo é ideal para o desenvolvimento e depuração dos testes, pois ele abr
 
 ```bash
 npx cypress open
+```
+
+### 2. Modo Headless (Via Terminal)
+
+Este modo executa os testes diretamente no terminal, sem abrir a interface gráfica. É o método mais comum para uso em ambientes de Integração Contínua (CI).
+
+```bash
+npx cypress run
+```
+
+### 3. Para rodar os testes em um navegador específico (ex: Chrome), você pode usar o comando:
+```bash
+npx cypress run --browser chrome
+```
