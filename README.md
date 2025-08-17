@@ -21,14 +21,11 @@ Siga os passos abaixo para clonar o repositório e instalar as dependências do 
 
 git clone https://github.com/guigsbatera/cypress.git
 
-* Entre no diretório do projeto: 
-
+* Entre no diretório do projeto:
 cd cypress
 
 * Instale as dependências:
-
 npm install
-
 Este comando instalará o Cypress e todas as dependências listadas no arquivo package.json.
 
 # Como Executar os Testes
@@ -36,16 +33,13 @@ Existem duas maneiras principais de executar os testes com Cypress:
 
 * Modo Interativo (Cypress Test Runner)
 Este modo é ideal para o desenvolvimento e depuração dos testes, pois ele abre uma interface gráfica interativa do Cypress.
-
 npx cypress open
 
 Ao executar este comando, a interface do Cypress será aberta. Nela, você pode selecionar o navegador de sua preferência e rodar os testes clicando nos arquivos de especificação (.cy.js ou .cy.ts).
 
 * Modo Headless (Via Terminal)
 Este modo executa os testes diretamente no terminal, sem abrir a interface gráfica. É o método mais comum para uso em ambientes de Integração Contínua (CI).
-
 npx cypress run
 
-Para rodar os testes em um navegador específico (ex: Chrome), você pode usar o comando:
-
+* Para rodar os testes em um navegador específico (ex: Chrome), você pode usar o comando:
 npx cypress run --browser chrome
