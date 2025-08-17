@@ -10,8 +10,10 @@ Este repositório contém um projeto de automação de testes End-to-End (E2E) u
 ## Pré-requisitos
 
 Antes de começar, certifique-se de que você tem o Node.js instalado em sua máquina. Para verificar, execute os seguintes comandos no seu terminal:
-* node -v
-* npm -v
+```bash
+node -v
+npm -v
+```
 Se eles retornarem as versões instaladas, você está pronto para prosseguir.
 
 ## Instalação
