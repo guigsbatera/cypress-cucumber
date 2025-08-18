@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 //#region Classes
+import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
 import Login from '../../support/pages/login'
 import Utilidades from '../../support/utilidades/index'
 //#endregion
@@ -12,13 +13,17 @@ const el = require('../../support/pages/login/elements').ELEMENTS
 describe('Login ao site Automation Exercise', () => {
 
     beforeEach(() => {
-        cy.visit(Utilidades.urlAutomationExerciseLogin)
+        Given('I am on the login page', () => {
+            cy.visit(Utilidades.urlAutomationExerciseLogin)
+        })
     });
 
-    it('Deve efetuar login', () => {
+    it.only('Deve efetuar login', () => {  
         Login.efetuarLogin(Utilidades.emailUsuarioTeste, Utilidades.senhaUsuarioTeste)
         //Asserção
-        cy.get(el.txtLoggedInAs).should('exist').and('be.visible').and('have.text', Utilidades.nomeUsuarioTeste)
+    Then('I have a successful login', () => {
+         cy.get(el.txtLoggedInAs).should('exist').and('be.visible').and('have.text', Utilidades.nomeUsuarioTeste)
+    })
     });
 
     it('Não deve efetuar login com a senha incorreta', () => {
